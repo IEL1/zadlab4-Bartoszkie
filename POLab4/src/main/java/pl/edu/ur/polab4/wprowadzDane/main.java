@@ -110,10 +110,76 @@ public class main extends Student {
                     }
 
                     break;
-                    
-                case 4: 
-                    
-                    
+
+                case 4:
+
+                    System.out.println("Podaj numer indeksu na ktorym jest obiekt: ");
+                    Scanner scanner1 = new Scanner(System.in);
+                    int numer_indeksu_obiektu = scanner1.nextInt();
+
+                    System.out.println("Obiekty: " + studenty[numer_indeksu_obiektu]);
+
+                    // EXIT
+                    System.out.println("Zakoczyc działanie? Y/N");
+                    Scanner s4 = new Scanner(System.in);
+                    char x4 = s4.next().charAt(0);
+                    if (x4 == 'Y') {
+                        x = true;
+                    } else {
+                        x = false;
+                    }
+
+                    break;
+
+                case 5:
+
+                    System.out.println("Wyswietlenie wyszyskich obiektów");
+                    for (int i = 0; i < studenty.length; i++) {
+                        System.out.println("Obiekt: " + studenty[i]);
+                    }
+
+                    // EXIT
+                    System.out.println("Zakoczyc działanie? Y/N");
+                    Scanner s5 = new Scanner(System.in);
+                    char x5 = s5.next().charAt(0);
+                    if (x5 == 'Y') {
+                        x = true;
+                    } else {
+                        x = false;
+                    }
+
+                    break;
+
+                case 6:
+
+                    System.out.println("Podaj zakres OD - DO, wyswietlanych obiektów");
+
+                    System.out.println("OD: ");
+                    Scanner scanner3 = new Scanner(System.in);
+                    int numer_indeksu_tablicy = scanner3.nextInt();
+
+                    System.out.println("OD: ");
+                    Scanner scanner4 = new Scanner(System.in);
+                    int numer_indeksu_tablicy_1 = scanner4.nextInt();
+                    int b = 0;
+                    String.valueOf(b);
+
+                    for (b = studenty[numer_indeksu_tablicy]; b = studenty[numer_indeksu_tablicy_1]; b++) {
+
+                        System.out.println("Obiekty: " + studenty[b]);
+                    }
+
+                    // EXIT
+                    System.out.println("Zakoczyc działanie? Y/N");
+                    Scanner s6 = new Scanner(System.in);
+                    char x6 = s6.next().charAt(0);
+                    if (x6 == 'Y') {
+                        x = true;
+                    } else {
+                        x = false;
+                    }
+
+                    break;
 
             }
 
